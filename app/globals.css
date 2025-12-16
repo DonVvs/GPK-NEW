@@ -1,26 +1,41 @@
 @import "tailwindcss";
 
+@theme {
+  --color-kraft-50: #fbf8f5;
+  --color-kraft-100: #f5efe3;
+  --color-kraft-200: #eaddc5;
+  --color-kraft-300: #deb993;
+  --color-kraft-400: #d69f6e;
+  --color-kraft-500: #cf844e;
+  --color-kraft-600: #c26a3f;
+  --color-kraft-700: #a15535;
+  --color-kraft-800: #83472f;
+  --color-kraft-900: #6a3b29;
+  --color-kraft-950: #391e14;
+
+  --color-forest-50: #f2fbf5;
+  --color-forest-100: #e1f6e8;
+  --color-forest-200: #c3ebd2;
+  --color-forest-300: #96d9b3;
+  --color-forest-400: #61c08f;
+  --color-forest-500: #3aa272;
+  --color-forest-600: #2a825a;
+  --color-forest-700: #25684a;
+  --color-forest-800: #21533d;
+  --color-forest-900: #1d4434;
+  --color-forest-950: #0f261d;
+  
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #fbf8f5; /* kraft-50 */
+  --foreground: #1d4434; /* forest-900 */
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
 }
